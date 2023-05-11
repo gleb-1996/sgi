@@ -1,0 +1,244 @@
+@media screen and (max-width: 1023px) {
+    .container {
+        width: 94%;
+    }
+}
+
+/* header */
+
+@media screen and (max-width: 1023px) {
+    .contacts-top {
+        display: none;
+    }
+
+    .navigation {
+        position: absolute;
+        top: 0;
+        right: 0;
+        box-sizing: border-box;
+        display: none;
+        flex-direction: column;
+        width: 50%;
+        max-height: 100%;
+        overflow: scroll;
+        background-color: #006ed6;
+        border: 3px solid #ff4537;
+        z-index: 200;
+    }
+
+    .fa-bars {
+        display: flex;
+    }
+
+    .main-nav {
+        margin: 0;
+    }
+
+    .link-nav {
+        color: #fff;
+        border-bottom: 3px solid #fff;
+        text-align: right;
+    }
+
+    .link-nav:last-child {
+        border-bottom: none;
+    }
+
+    .close-mobile-nav {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .navigation {
+        width: 70%;
+    }
+
+    .logo-img {
+        width: 250px;
+    }
+}
+
+/* Content main page */
+
+@media screen and (max-width: 1023px) {
+    .item-partners {
+        width: 50%;
+    }
+
+    .logo-partners {
+        width: 70%;
+    }
+
+    .main-item, .main-item:hover {
+        border: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main-item {
+        width: 48%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .main-item {
+        width: 100%;
+    }
+
+    .item-partners {
+        width: 100%;
+    }
+
+    .logo-partners {
+        width: 70%;
+    }
+}
+
+/* Content customers page */
+
+@media screen and (max-width: 1024px) {
+    .item-customer {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .item-customer {
+        width: 48%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .item-customer {
+        width: 100%;
+    }
+}
+
+/* Content reviews page */
+
+@media screen and (max-width: 1023px) {
+    .wrapper-content-reviews {
+        display: none;
+    }
+
+    .items-reviews-mobile {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .reviews-link {
+        width: 100%;
+    }
+}
+
+/* Content contacts page */
+
+@media screen and (max-width: 1023px) {
+    .text-contact {
+        width: 769px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .text-contact {
+        width: 425px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .text-contact {
+        width: 100%;
+    }
+}
+
+/* Content seminars and projects page */
+
+@media screen and (max-width: 1023px) {
+    .nav-seminars-mobile, .items-projects-mobile {
+        display: block;
+    }
+
+    .wrapper-content-services, .wrapper-content-projects {
+        display: none;
+    }
+
+    .email-seminars {
+        display: block;
+    }
+
+    .fa-chevron-right {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .description-projects {
+        width: 100%;
+        padding: 0;
+      }
+
+      .items-projects {
+        position: fixed;
+        top: 0;
+        left: 0;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        background-color: #006ed6;
+        padding: 15px 3% 50px 3%;
+        border: 3px solid #ff4537;
+        z-index: 9999;
+      }
+
+      /* .nav-seminars {
+        height: 100%;
+        overflow: scroll;
+        color: #fff;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      } */
+
+      /* .fa-chevron-right {
+        position: relative;
+        display: inline-block;
+      } */
+
+      .link-projects {
+        color: #fff;
+      }
+
+      .close-mobile-nav-projects {
+        display: flex;
+      }
+
+      .open-list-projects {
+        display: flex;
+      }
+
+      .active-link {
+        color: #ffa0a0 !important;
+    }
+}
+
+/* Modal window */
+
+@media screen and (max-width: 1024px) {
+    .modal-window {
+        width: 768px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .modal-window {
+        width: 425px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .modal-window {
+        width: 100%;
+    }
+}
