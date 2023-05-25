@@ -795,7 +795,7 @@ li.seminar.active-link:hover, a.link-projects.active-link, a.link-reviews.active
 .logo {
     box-sizing: border-box;
     display: block;
-    height: 110px;
+    height: 130px;
     padding: 5px 0;
 }
 
@@ -851,7 +851,7 @@ li.seminar.active-link:hover, a.link-projects.active-link, a.link-reviews.active
 
 .submenu {
     position: absolute;
-    top: 160px;
+    top: 180px;
     left: 0;
     width: 100%;
     background-color: #edf9ff;
