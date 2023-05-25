@@ -131,11 +131,11 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 17px;
+    font-size: 20px;
     font-weight: bold;
     color: #3e4143;
     text-decoration: none;
-    padding: 15px 5px;
+    padding: 15px 10px;
     border-bottom: 3px solid transparent;
     transition: .5s;
 }
@@ -795,8 +795,8 @@ li.seminar.active-link:hover, a.link-projects.active-link, a.link-reviews.active
 .logo {
     box-sizing: border-box;
     display: block;
-    height: 130px;
-    padding: 5px 0;
+    height: 115px;
+    padding: 10px 0;
 }
 
 .form-search {
@@ -851,7 +851,7 @@ li.seminar.active-link:hover, a.link-projects.active-link, a.link-reviews.active
 
 .submenu {
     position: absolute;
-    top: 180px;
+    top: 165px;
     left: 0;
     width: 100%;
     background-color: #edf9ff;
