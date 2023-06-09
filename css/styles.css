@@ -147,16 +147,8 @@ p {
 }
 
 .content {
-    background-size: 100%;
-    background-position: center;
     flex: 1 0 auto;
-    background-image: url(../img/f2dVXCli_ik.jpg);
-    background-repeat: no-repeat;
     padding-top: 50px;
-}
-
-.back-black {
-    position: relative;
 }
 
 .main-heading {
@@ -226,25 +218,6 @@ footer {
     background-color: #c7e6ff;
     opacity: .8;
     z-index: 0;
-}
-
-.dark-layer-text-about {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #ccc;
-    opacity: .7;
-    z-index: 999;
-}
-
-.text-about {
-    position: relative;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    padding: 15px;
 }
 
 .main-item-content {
