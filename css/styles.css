@@ -73,15 +73,13 @@ p {
     color: #3e4143;
     padding: 0 10px 0 0;
     border-right: 1px solid #ccc;
-    transition: .5s;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .contacts-top-links:hover, .contacts-links:hover {
-    color: #006ed6;
-    transition: .5s;
+    color: #df1f26;
 }
 
 .contacts-top-links:nth-child(even) {
@@ -840,6 +838,10 @@ li.seminar.active-link:hover, a.link-projects.active-link, a.link-reviews.active
     text-decoration: none;
 }
 
+.item-submenu:hover {
+    color: #df1f26;
+}
+
 .flex-submenu {
     display: flex;
     justify-content: flex-end;
@@ -847,4 +849,8 @@ li.seminar.active-link:hover, a.link-projects.active-link, a.link-reviews.active
 
 .active-item-submenu {
     background-color: #fff;
+}
+
+.active-item-submenu:hover {
+    color: #006ed6 !important;
 }
