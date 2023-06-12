@@ -9,6 +9,21 @@ let $lang = document.querySelector('.language');
 let $blockLang = document.querySelector('.change-language');
 let $layerClose = document.querySelector('.layer-close');
 
+let newPageY = 0;
+let oldPageY = 0;
+
+function scrollDifference(a) {
+    newPageY = a
+
+    if (newPageY > oldPageY) {
+        oldPageY = newPageY;
+        return true;
+    } else {
+        oldPageY = newPageY;
+        return false;
+    }
+}
+
 $openMobileNav.addEventListener('click', function(){
     $nav.classList.add('show');
 });
@@ -38,9 +53,11 @@ $lang.addEventListener('click', function() {
  });
 
  window.addEventListener('scroll', function() {
-    if (window.pageYOffset >= 60) {
+    if (scrollDifference(window.pageYOffset) && window.pageYOffset >= 60) {
         $header.classList.add('transform-header');
-    } else {
+    } else if (!scrollDifference(window.pageYOffset) && window.pageYOffset < 60) {
+        $header.classList.remove('transform-header');
+    } else if (!scrollDifference(window.pageYOffset)) {
         $header.classList.remove('transform-header');
     }
  });

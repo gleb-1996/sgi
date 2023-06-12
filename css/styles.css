@@ -764,6 +764,7 @@ li.seminar.active-link:hover, a.link-projects.active-link, a.link-reviews.active
     top: 0;
     left: 0;
     width: 100%;
+    background-color: #fff;
     transition: .5s;
 }
 
