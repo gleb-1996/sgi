@@ -14,6 +14,7 @@ html, body {
 }
 
 body {
+    margin-top: 165px;
     font-family: 'Nunito', 'Montserrat', 'Raleway', sans-serif;
 }
 
@@ -758,6 +759,18 @@ li.seminar.active-link:hover, a.link-projects.active-link, a.link-reviews.active
 
 /* СГИ */
 
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: .5s;
+}
+
+.transform-header {
+    transform: translateY(-165px);
+}
+
 .flex-middle-header {
     display: flex;
     justify-content: space-between;
@@ -803,13 +816,14 @@ li.seminar.active-link:hover, a.link-projects.active-link, a.link-reviews.active
     box-sizing: border-box;
     position: relative;
     padding-left: 10px;
+    cursor: pointer;
 }
 
 .img-language {
     height: 50px;
 }
 
-.languages {
+.change-language {
     box-sizing: border-box;
     position: absolute;
     top: 50px;
@@ -817,17 +831,25 @@ li.seminar.active-link:hover, a.link-projects.active-link, a.link-reviews.active
     border: 1px solid #ccc;
     padding: 0 10px;
     background-color: #edf9ff;
-    z-index: 999;
 }
 
 .submenu {
     position: absolute;
     top: 165px;
     left: 0;
+    display: none;
     width: 100%;
     background-color: #edf9ff;
     height: 50px;
     z-index: 9999;
+}
+
+.wrap-link-nav {
+    display: flex;
+}
+
+.wrap-link-nav:hover .submenu{
+    display: block;
 }
 
 .item-submenu {
@@ -853,4 +875,23 @@ li.seminar.active-link:hover, a.link-projects.active-link, a.link-reviews.active
 
 .active-item-submenu:hover {
     color: #006ed6 !important;
+}
+
+.fa-caret-down {
+    margin: 0 5px;
+}
+
+.layer-close {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    color: #fff;
+    font-size: 2em;
+    opacity: .5;
 }
