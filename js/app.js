@@ -54,6 +54,15 @@ $lang.addEventListener('click', function() {
 
  window.addEventListener('scroll', function() {
     if (scrollDifference(window.pageYOffset) && window.pageYOffset >= 60) {
+        if ($blockLang.classList.contains('show')) {
+            $layerClose.classList.remove('show');
+            $blockLang.classList.remove('show');
+        }
+
+        if ($nav.classList.contains('show')) {
+            $nav.classList.remove('show');
+        }
+
         $header.classList.add('transform-header');
     } else if (!scrollDifference(window.pageYOffset) && window.pageYOffset < 60) {
         $header.classList.remove('transform-header');

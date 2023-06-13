@@ -475,7 +475,7 @@ footer {
 
 .fa-times-circle-o {
     color: #fff;
-    background-color: #ff4537;
+    background-color: #df1f26;
 }
 
 .close-mobile-nav {
@@ -687,6 +687,8 @@ li.seminar.active-link:hover, a.link-projects.active-link, a.link-reviews.active
     height: 50px;
     font-size: 50px;
     text-align: center;
+    background-color: #df1f26;
+    color: #fff;
 }
 
 .img-modal-window {
