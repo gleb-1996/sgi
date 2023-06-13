@@ -11,6 +11,7 @@ let $layerClose = document.querySelector('.layer-close');
 let $submenu = document.querySelector('.submenu');
 let $openMobileSubmenu = document.querySelector('.fa-caret-down-mobile-nav');
 let $mobileSubmenu = document.querySelector('.mobile-submenu');
+let $arrItemsSubmenu = document.querySelectorAll('.item-submenu');
 
 let newPageY = 0;
 let oldPageY = 0;
@@ -28,6 +29,13 @@ function scrollDifference(a) {
 }
 
 $openMobileNav.addEventListener('click', function(){
+    // for (const item in $arrItemsSubmenu) {
+    //     if (item.classList.contains('active-item-submenu')) {
+    //         $mobileSubmenu.classList.add('show-mobile-submenu');
+    //         break;
+    //     }
+    // }
+
     $nav.classList.add('show');
 });
 
@@ -54,6 +62,10 @@ $lang.addEventListener('click', function() {
 
         if ($nav.classList.contains('show')) {
             $nav.classList.remove('show');
+        }
+
+        if ($mobileSubmenu.classList.contains('show-mobile-submenu')) {
+            $mobileSubmenu.classList.remove('show-mobile-submenu');
         }
         
         if ($submenu.classList.contains('show-submenu')) {
