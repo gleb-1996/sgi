@@ -37,6 +37,10 @@ p {
     display: block;
 }
 
+.show-submenu {
+    display: block !important;
+}
+
 .hide-content {
     display: none !important;
 }
@@ -807,6 +811,10 @@ li.seminar.active-link:hover, a.link-projects.active-link, a.link-reviews.active
     transform: translateY(-165px);
 }
 
+.transform-header-fixed-submenu {
+    transform: translateY(-215px);
+}
+
 .flex-middle-header {
     display: flex;
     justify-content: space-between;
@@ -930,4 +938,28 @@ li.seminar.active-link:hover, a.link-projects.active-link, a.link-reviews.active
     color: #fff;
     font-size: 2em;
     opacity: .5;
+}
+
+.wrap-products {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.link-product {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 40%;
+    height: 200px;
+    background-color: #caecff;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.to-page-product {
+    height: 100px;
 }

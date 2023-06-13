@@ -8,6 +8,7 @@ let $nav = document.querySelector('.navigation-mobile');
 let $lang = document.querySelector('.language');
 let $blockLang = document.querySelector('.change-language');
 let $layerClose = document.querySelector('.layer-close');
+let $submenu = document.querySelector('.submenu');
 
 let newPageY = 0;
 let oldPageY = 0;
@@ -62,11 +63,17 @@ $lang.addEventListener('click', function() {
         if ($nav.classList.contains('show')) {
             $nav.classList.remove('show');
         }
-
-        $header.classList.add('transform-header');
+        
+        if ($submenu.classList.contains('show-submenu')) {
+            $header.classList.add('transform-header-fixed-submenu');
+        } else {
+            $header.classList.add('transform-header');
+        }
     } else if (!scrollDifference(window.pageYOffset) && window.pageYOffset < 60) {
-        $header.classList.remove('transform-header');
-    } else if (!scrollDifference(window.pageYOffset)) {
-        $header.classList.remove('transform-header');
+        if ($submenu.classList.contains('show-submenu')) {
+            $header.classList.remove('transform-header-fixed-submenu');
+        } else {
+            $header.classList.remove('transform-header');
+        }
     }
  });
