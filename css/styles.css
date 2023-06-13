@@ -963,3 +963,35 @@ li.seminar.active-link:hover, a.link-projects.active-link, a.link-reviews.active
 .to-page-product {
     height: 100px;
 }
+
+.mobile-submenu {
+    display: none;
+    border-bottom: 2px solid #2779be;
+}
+
+.show-mobile-submenu {
+    display: block;
+}
+
+.fa-caret-down-mobile-nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 100%;
+    margin: 0;
+    border-left: 1px solid #2779be;
+    color: #2779be;
+}
+
+.with-submenu {
+    display: block;
+    border-bottom: 2px solid #2779be !important;
+}
+
+.wrap-link-nav-mobile-with-submenu {
+    position: relative;
+}

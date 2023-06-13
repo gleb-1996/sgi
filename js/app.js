@@ -9,6 +9,8 @@ let $lang = document.querySelector('.language');
 let $blockLang = document.querySelector('.change-language');
 let $layerClose = document.querySelector('.layer-close');
 let $submenu = document.querySelector('.submenu');
+let $openMobileSubmenu = document.querySelector('.fa-caret-down-mobile-nav');
+let $mobileSubmenu = document.querySelector('.mobile-submenu');
 
 let newPageY = 0;
 let oldPageY = 0;
@@ -32,16 +34,6 @@ $openMobileNav.addEventListener('click', function(){
 $closeMobileNav.addEventListener('click', function(){
     $nav.classList.remove('show');
 });
-
-// $wrapper.addEventListener('click', function(event) {
-//     let $elemTarget = event.target;
-    
-//     if ($blockLang.classList.contains('show')) {
-//         if (!$elemTarget.classList.contains('language') && !$elemTarget.classList.contains('change-language')) {
-//             $blockLang.classList.remove('show');
-//         }    
-//     }
-//  });
 
 $lang.addEventListener('click', function() {
     if ($blockLang.classList.contains('show')) {
@@ -83,3 +75,11 @@ $lang.addEventListener('click', function() {
         }
     }
  });
+
+$openMobileSubmenu.addEventListener('click', function(){
+ if ($mobileSubmenu.classList.contains('show-mobile-submenu')) {
+  $mobileSubmenu.classList.remove('show-mobile-submenu');
+ } else {
+  $mobileSubmenu.classList.add('show-mobile-submenu');
+ }
+});
