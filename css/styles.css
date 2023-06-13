@@ -126,6 +126,21 @@ p {
     justify-content: space-between;
 }
 
+.navigation-mobile {
+    position: absolute;
+    top: 0;
+    right: 0;
+    box-sizing: border-box;
+    display: none;
+    flex-direction: column;
+    width: 50%;
+    max-height: 100%;
+    overflow: scroll;
+    background-color: #006ed6;
+    border: 3px solid #ff4537;
+    z-index: 200;
+}
+
 .link-nav {
     display: flex;
     justify-content: center;
@@ -439,9 +454,14 @@ footer {
     display: none;
     align-items: center;
     font-size: 2.5em;
-    color: #006ed6;
+    color: #df1f26;
     padding: 0 20px;
-    border: 1px solid #006ed6;
+    border: 1px solid #df1f26;
+}
+
+.wrap-bars {
+    display: none;
+    padding: 10px 0;
 }
 
 .fa-times-circle-o {

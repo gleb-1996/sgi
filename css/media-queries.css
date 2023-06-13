@@ -12,18 +12,11 @@
     }
 
     .navigation {
-        position: absolute;
-        top: 0;
-        right: 0;
-        box-sizing: border-box;
         display: none;
-        flex-direction: column;
-        width: 50%;
-        max-height: 100%;
-        overflow: scroll;
-        background-color: #006ed6;
-        border: 3px solid #ff4537;
-        z-index: 200;
+    }
+
+    .wrap-bars {
+        display: flex;
     }
 
     .fa-bars {
@@ -50,7 +43,7 @@
 }
 
 @media screen and (max-width: 425px) {
-    .navigation {
+    .navigation-mobile {
         width: 70%;
     }
 
