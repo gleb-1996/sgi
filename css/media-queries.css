@@ -27,18 +27,8 @@
         margin: 0;
     }
 
-    .link-nav {
-        color: #fff;
-        border-bottom: 3px solid #fff;
-        text-align: right;
-    }
-
-    .link-nav:last-child {
+    .link-nav-mobile:last-child {
         border-bottom: none;
-    }
-
-    .close-mobile-nav {
-        display: block;
     }
 }
 
@@ -47,8 +37,17 @@
         width: 70%;
     }
 
-    .logo-img {
-        width: 250px;
+    .text-contact-top {
+        display: none;
+    }
+
+    .contacts-top-links:first-child {
+        border-left: 1px solid #ccc;
+    }
+
+    .contacts-top-links {
+        font-size: 18px;
+        padding: 0 10px;
     }
 }
 
