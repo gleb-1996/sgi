@@ -49,6 +49,10 @@
         font-size: 18px;
         padding: 0 10px;
     }
+
+    p {
+        text-align: left;
+    }
 }
 
 /* Content main page */
