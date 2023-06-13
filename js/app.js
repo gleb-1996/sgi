@@ -75,5 +75,11 @@ $lang.addEventListener('click', function() {
         } else {
             $header.classList.remove('transform-header');
         }
+    } else (!scrollDifference(window.pageYOffset)) {
+        if ($submenu.classList.contains('show-submenu')) {
+            $header.classList.remove('transform-header-fixed-submenu');
+        } else {
+            $header.classList.remove('transform-header');
+        }
     }
  });
