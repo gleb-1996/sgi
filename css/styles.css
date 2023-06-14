@@ -953,11 +953,11 @@ li.seminar.active-link:hover, a.link-projects.active-link, a.link-reviews.active
     align-items: center;
     text-align: center;
     width: 40%;
-    height: 200px;
     background-color: #caecff;
     border-radius: 10px;
     margin-bottom: 10px;
     text-decoration: none;
+    padding: 100px 0;
 }
 
 .to-page-product {
@@ -994,4 +994,41 @@ li.seminar.active-link:hover, a.link-projects.active-link, a.link-reviews.active
 
 .wrap-link-nav-mobile-with-submenu {
     position: relative;
+}
+
+.logo-eurohim {
+    box-sizing: border-box;
+    background-color: #00b0f0;
+    padding: 10px;
+}
+
+.wrap-items-partners {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.img-logo-partner {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: 120px;
+}
+
+.item-partner {
+    box-sizing: border-box;
+    width: 30%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+    transition: .5s;
+}
+
+.item-partner:hover {
+    transition: .5s;
+    box-shadow: 0 0 5px 5px #d9d9d9;
+    transform: scale(1.1);
+    border: none;
 }

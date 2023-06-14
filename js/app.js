@@ -11,7 +11,7 @@ let $layerClose = document.querySelector('.layer-close');
 let $submenu = document.querySelector('.submenu');
 let $openMobileSubmenu = document.querySelector('.fa-caret-down-mobile-nav');
 let $mobileSubmenu = document.querySelector('.mobile-submenu');
-let $arrItemsSubmenu = document.querySelectorAll('.item-submenu');
+let $arrItemsSubmenu = $mobileSubmenu.children;
 
 let newPageY = 0;
 let oldPageY = 0;
@@ -29,12 +29,12 @@ function scrollDifference(a) {
 }
 
 $openMobileNav.addEventListener('click', function(){
-    // for (const item in $arrItemsSubmenu) {
-    //     if (item.classList.contains('active-item-submenu')) {
-    //         $mobileSubmenu.classList.add('show-mobile-submenu');
-    //         break;
-    //     }
-    // }
+    for (const item of $arrItemsSubmenu) {
+        if (item.classList.contains('active-item-submenu')) {
+            $mobileSubmenu.classList.add('show-mobile-submenu');
+            break;
+        }
+    }
 
     $nav.classList.add('show');
 });

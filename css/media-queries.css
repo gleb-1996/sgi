@@ -58,6 +58,10 @@
 /* Content main page */
 
 @media screen and (max-width: 1023px) {
+    .main-heading {
+        font-size: 1.4em;
+    }
+
     .item-partners {
         width: 50%;
     }
@@ -69,15 +73,31 @@
     .main-item, .main-item:hover {
         border: none;
     }
+
+    .item-partner {
+        width: 40%;
+    }
 }
 
 @media screen and (max-width: 768px) {
     .main-item {
         width: 48%;
     }
+
+    .item-partner {
+        width: 49%;
+    }
 }
 
 @media screen and (max-width: 425px) {
+    .link-product {
+        padding: 50px 0;
+    }
+
+    .item-partner {
+        width: 100%;
+    }
+
     .main-item {
         width: 100%;
     }
