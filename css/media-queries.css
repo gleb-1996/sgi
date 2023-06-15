@@ -87,6 +87,10 @@
     .item-partner {
         width: 49%;
     }
+
+    .item-cert {
+        width: 80%;
+    }
 }
 
 @media screen and (max-width: 425px) {
@@ -111,6 +115,10 @@
     }
 
     .link-product {
+        width: 100%;
+    }
+
+    .item-cert {
         width: 100%;
     }
 }
