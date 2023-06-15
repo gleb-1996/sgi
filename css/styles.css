@@ -459,7 +459,6 @@ footer {
 
 .wrap-text-contact {
     display: flex;
-    justify-content: center;
     margin: 30px 0;
 }
 
@@ -1045,4 +1044,46 @@ li.seminar.active-link:hover, a.link-projects.active-link, a.link-reviews.active
 
 .wrap-items-cert {
     justify-content: space-evenly;
+}
+
+.contact-city {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+p.for-question {
+    font-weight: bold;
+}
+
+.contact-blocks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.left-contacts-block {
+    width: 50%;
+}
+
+.circle-map {
+    width: 280px;
+    height: 280px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    background-image: url(../img/back-map.png);
+    background-position: center;
+}
+
+.right-contacts-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+.link-to-map {
+    display: block;
+    padding: 15px 10px;
+    border: 1px solid #006ed6;
+    margin-top: 30px;
 }
