@@ -19,16 +19,7 @@ $content.addEventListener('click', function(event){
         $imgModalWindow.setAttribute('src', attrHref);
     }
 
-    if ($elemTarget.classList.contains('link-reviews-mobile')) {
-        event.preventDefault();
-
-        attrHref = $elemTarget.getAttribute('href');
-
-        $modalWindow.classList.remove('hide-content');
-        $imgModalWindow.setAttribute('src', attrHref);
-    }
-
-    if ($elemTarget.classList.contains('img-review')) {
+    if ($elemTarget.classList.contains('img-logo-cert')) {
         event.preventDefault();
 
         attrSrc = $elemTarget.getAttribute('src');

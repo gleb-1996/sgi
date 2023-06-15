@@ -1002,21 +1002,21 @@ li.seminar.active-link:hover, a.link-projects.active-link, a.link-reviews.active
     padding: 10px;
 }
 
-.wrap-items-partners {
+.wrap-items-partners, .wrap-items-cert {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 20px;
 }
 
-.img-logo-partner {
+.img-logo-partner, .img-logo-cert {
     display: block;
     margin: 0 auto;
     max-width: 100%;
     height: 120px;
 }
 
-.item-partner {
+.item-partner, .item-cert {
     box-sizing: border-box;
     width: 30%;
     border: 1px solid #ccc;
@@ -1026,9 +1026,23 @@ li.seminar.active-link:hover, a.link-projects.active-link, a.link-reviews.active
     transition: .5s;
 }
 
-.item-partner:hover {
+.item-cert {
+    height: 400px;
+    margin-right: 10px;
+    overflow: hidden;
+}
+
+.item-partner:hover, .item-cert:hover {
     transition: .5s;
     box-shadow: 0 0 5px 5px #d9d9d9;
     transform: scale(1.1);
     border: none;
+}
+
+.img-logo-cert {
+    height: auto;
+}
+
+.wrap-items-cert {
+    justify-content: space-evenly;
 }
