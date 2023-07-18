@@ -662,6 +662,7 @@ li.seminar.active-link:hover, a.link-projects.active-link, a.link-reviews.active
     justify-content: center;
     width: 100%;
     height: 100%;
+    z-index: 9999;
 }
 
 .modal-window {
@@ -1170,4 +1171,47 @@ p.for-question {
 
 .text-underline {
     text-decoration: underline;
+}
+
+.wrap-item-sert {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.item-sert {
+    max-width: 30%;
+    height: 400px;
+    overflow: hidden;
+    border: 1px solid #caecff;
+}
+
+.about-end {
+    position: relative;
+    background-image: url(../img/city.jpg);
+    background-repeat: no-repeat;
+    background-size: 101%;
+    height: 400px;
+}
+
+.dark-layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: .5;
+}
+
+.text-about-bottom {
+    opacity: .5;
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 35px 0;
+}
+
+.flex-about-bottom {
+    display: flex;
+    align-items: center;
+    height: 100%;
 }
