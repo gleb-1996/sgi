@@ -52,10 +52,13 @@
    */
   
   hr {
-    box-sizing: content-box; /* 1 */
-    height: 0; /* 1 */
-    overflow: visible; /* 2 */
-    border: 0;
+    box-sizing: content-box;
+    width: 30%;
+    margin: 100px auto;
+    height: 0;
+    overflow: visible;
+    border: none;
+    border-top: 1px solid #caecff;
   }
   
   /**

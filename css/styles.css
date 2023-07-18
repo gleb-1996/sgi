@@ -804,6 +804,7 @@ li.seminar.active-link:hover, a.link-projects.active-link, a.link-reviews.active
     width: 100%;
     background-color: #fff;
     transition: .5s;
+    z-index: 1000;
 }
 
 .transform-header {
@@ -1086,4 +1087,87 @@ p.for-question {
     padding: 15px 10px;
     border: 1px solid #006ed6;
     margin-top: 30px;
+}
+
+.wrap-block-about-top,
+.wrap-block-about-bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.wrap-text-block-about-top,
+.wrap-text-block-about-bottom {
+    display: flex;
+    align-items: center;
+    width: 45%;
+}
+
+.wrap-img-block-about-top,
+.wrap-img-block-about-bottom {
+    width: 50%;
+}
+
+.img-block-about-top,
+.img-block-about-bottom {
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid #caecff;
+}
+
+.wrap-history-blocks {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.history-block {
+    width: 30%;
+}
+
+.img-history-block {
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    height: 300px;
+    border: 1px solid #caecff;
+    border-radius: 50%;
+}
+
+.first-history-block {
+    background-image: url('../img/about_2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.second-history-block {
+    background-image: url(../img/about_3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.text-img-history-block {
+    width: 100%;
+    text-align: center;
+    margin: 0 10px;
+    padding: 15px 0;
+    font-size: 1.3em;
+    font-weight: bold;
+    background: #fff;
+    opacity: .6;
+}
+
+.text-history-block {
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.third-history-block {
+    align-items: center;
+}
+
+.text-underline {
+    text-decoration: underline;
 }
